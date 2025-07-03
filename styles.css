@@ -1,0 +1,407 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    text-decoration: none;
+    margin: 0;
+    list-style: none;
+}
+
+:root {
+  --main-color: #ffffff;
+  --secun-color: #475dda;
+  --primary: 250 66% 61%; 
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: #00021b;
+    height: 400vh;
+   
+}
+
+.logo{
+    position: absolute;
+    top: 5%;
+    left: -10%;
+}
+
+.logo img{
+    height: 130px;
+    width: auto;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh; 
+  width: 110px;  
+  background-color: #0e1435; 
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.menu {
+  padding: 15px;
+  margin-top: 350px;
+}
+
+.menu li {
+    margin-bottom: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  justify-content: center;
+  height: 45px;
+  color: var(--main-color);
+  transition: 0.4s;
+  border-width: 0 15px;
+  border-style: solid;
+  border-color: transparent; 
+  border-radius: 12px;
+}
+
+.menu a:hover {
+    border-color: rgba(83, 82, 82, 0.0);
+    background-color: rgba(83, 82, 82, 0.2); 
+    border-style: solid;
+    border-radius: 12px;
+}
+
+.desc {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  color: var(--main-color);
+}
+
+.desc-text {
+  position: absolute;
+  left: 200%; 
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--secun-color);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: 0.3s ease;
+  font-size: 14px;
+  z-index: 10;
+}
+
+.desc:hover .desc-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* home page _________________________________________________________________ */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95%;
+  background-image: url('img/mapa.png');
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  z-index: 1;
+  pointer-events: none; 
+}
+
+.conteudo {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 2rem;
+  top: 42%;
+  left: 30%;
+}
+
+.conteudo  h1{
+  color: var(--main-color);
+  font-size: 50px;
+}
+
+.conteudo p{
+  color: var(--main-color);
+  align-self: center;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+  .botao {
+    position: relative;
+    right: 5%;
+    margin-top: 50px;
+    padding: 28px 52px;
+    font-size: 24px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  .botao:hover {
+  box-shadow: 0 0 30px #0e1435,
+              0 0 50px #0e1435;
+}
+
+.botao2{
+  position: relative;
+    left: 5%;
+    margin-top: 50px;
+    padding: 28px 85px;
+    font-size: 24px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+  .inner {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      100px circle at var(--mouseX) var(--mouseY),
+      hsl(var(--primary) / 0.3),
+      transparent 50%
+    );
+    border-radius: inherit;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+
+  .botao:hover .inner {
+    opacity: 1;
+  }
+
+
+  /* pagina 2 _________________________________________________________________ */
+
+  .segunda{
+    margin-top: 100px;
+  }
+
+  #descricao {
+  scroll-margin-top: 100px
+  }
+
+  .sobre h1{
+    color: var(--secun-color);
+    font-size: 50px;
+    margin-left: 200px;
+  }
+
+  .sobre h2{
+    position: relative;
+    margin-top: 50px;
+    font-size: 26px;
+    color: white;
+    max-width: 800px;
+    left: 10%;
+  }
+
+  .cel{
+    width: 550px;
+    position: relative;
+    left: 53%;
+    margin-top: -700px;
+    margin-left: 200px;
+    pointer-events: none; 
+  }
+
+  /* pagina 3 _______________________________________________________________________________ */
+
+  .terceira{
+    width: 100%;
+    height: 25%;
+    background-color: black;
+    margin-top: 85px;
+  }
+
+  .app {
+  text-align: center; 
+  padding-top: 400px;
+}
+
+  .app h1{
+    color: var(--main-color);
+    font-size: 40px;
+  }
+
+  .app h2{
+    color: var(--secun-color);
+    margin-top: 50px;
+  }
+
+.botoes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; 
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.btn {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+  transform: scale(1.03);
+}
+
+.conteudo-botao {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bxl-play-store {
+  font-size: 40px;
+  color: white;
+}
+
+.bxl-apple{
+  color: white;
+  font-size: 40px;
+}
+
+.texto {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.texto .cima {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.texto span:last-child {
+  font-size: 18px;
+  color: var(--secun-color);
+}
+
+.normal, .hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.normal {
+  opacity: 1;
+  z-index: 2;
+}
+
+.btn:hover .normal {
+  transform: translate(-50%, -150%);
+  opacity: 0;
+}
+
+.hover {
+  opacity: 0;
+  transform: translate(-50%, 150%);
+  z-index: 1;
+}
+
+.btn:hover .hover {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.normal i, .hover i {
+  font-size: 40px;
+  color: white;
+}
+
+.texto {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.texto .cima {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.texto span:last-child {
+  font-size: 18px;
+  color: var(--secun-color);
+}
+
+.botao-wrapper {
+  position: relative;
+  display: inline-block; 
+}
+
+.botao-wrapper::before {
+  content: "⬇️ 100 KB";
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--secun-color);
+  color: #111;
+  font-size: 12px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.botao-wrapper:hover::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+  transition: 1.5s;
+}
