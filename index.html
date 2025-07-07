@@ -148,10 +148,75 @@
       </div>
     </section>
 
-    <section class="quarta">
-      <div id="contato"></div>
-      <h1>Entre em contato</h1>
+    <section>
+      <div id="contato">
+        <h1>Entre em contato</h1>
+        <form class="formulario-contato">
+          <div class="principal">
+            <div class="box">
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                class="campo"
+                placeholder="Nome"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <input
+                type="text"
+                id="sobrenome"
+                name="sobrenome"
+                class="campo"
+                placeholder="Sobrenome"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="secundario">
+            <div class="box">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="campo"
+                placeholder="E‑mail"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                class="campo-texto"
+                placeholder="Escreva sua mensagem"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="botao-enviar">Enviar</button>
+        </form>
+      </div>
     </section>
+
+    <footer>
+      <div class="footer-container">
+        <img src="img/logo.png" alt="logo" />
+
+        <div class="">
+          <a href=""><i class="bx bxl-github"></i></a>
+          <a href=""><i class="bx bxl-linkedin-square"></i></a>
+          <a href=""><i class="bx bxl-gmail"></i></a>
+          <a href=""><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>

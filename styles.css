@@ -18,7 +18,7 @@ html{
 
 body{
     background-color: #00021b;
-    height: 400vh;
+    height: 420vh;
    
 }
 
@@ -405,3 +405,137 @@ header {
   transform: translateX(-50%) translateY(-5px);
   transition: 1.5s;
 }
+
+/* quarta  _________________________________________________*/
+
+#contato{
+  text-align: center;
+  margin-top: 100px;
+   scroll-margin-top: 100px
+}
+
+  #contato h1{
+    color: var(--secun-color);
+    font-size: 50px;
+  }
+
+  .principal {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 0;
+  }
+
+  .principal input{
+    margin-top: 50px;
+    display: block;
+    width: 310px;
+    height: 50px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgb(163, 163, 163);
+    font-size: 20px;
+  }
+
+  .principal input:hover{
+   box-shadow: 0px 0 10px white;
+  }
+
+  .secundario input{
+    position: relative;
+    left: 32%;
+    display: block;
+    margin-bottom: 10px;
+    width: 35%;
+    height: 50px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgb(163, 163, 163);
+    font-size: 20px;
+     max-width: 700px;
+}
+
+  .secundario input:hover{
+   box-shadow: 0px 0 10px white;
+  }
+
+  .secundario textarea{
+    height: 200px;
+    width: 34.5%;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+
+  .secundario textarea:hover{
+      box-shadow: 0 0 10px 0 white;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: var(--secun-color);        
+    padding-left: 10px;
+}
+
+  textarea::placeholder{
+    padding-top: 15px;
+}
+
+  input, textarea {
+    padding-left: 15px;
+    font-size: 22px;
+    color: var(--secun-color);
+}
+
+.botao-enviar{
+  width: 35%;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.botao-enviar:hover{
+  background-color: var(--secun-color);
+  box-shadow: 0 0 10px var(--secun-color),
+              0 0 20px var(--secun-color);
+  transition: 0.2s;
+}
+
+/* rodapé ___________________________________________________________ */
+
+footer{
+  display: flex;
+  position: relative;
+  justify-items: center;
+  background-color: #2c2c2c;
+  top: 5%;
+  width: 100%;
+  height: 10%;
+}
+
+.footer-container img{
+    width: 10%;
+    height: auto;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+.links{
+  position: absolute;
+  left: 50%;
+  top: 30%;
+}
+
+.links i{
+  font-size: 35px;
+  color: var(--secun-color);
+}
+
+
+
+
+
