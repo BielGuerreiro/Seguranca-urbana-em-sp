@@ -155,54 +155,70 @@ header {
   margin-top: 20px;
 }
 
-  .botao {
-    position: relative;
-    right: 5%;
-    margin-top: 50px;
-    padding: 28px 52px;
-    font-size: 24px;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    border-radius: 100px;
-    cursor: pointer;
-  }
-
-  .botao:hover {
-  box-shadow: 0 0 30px #0e1435,
-              0 0 50px #0e1435;
-}
-
-.botao2{
+.botao{
+  padding: 2em;
+  width: 300px;
+  max-width: 100%;
+  background: #1c1f2b;
+  border-radius: 10px;
   position: relative;
-    left: 5%;
-    margin-top: 50px;
-    padding: 28px 85px;
-    font-size: 24px;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    border-radius: 100px;
-    cursor: pointer;
+  margin-left: -420px;
+  margin-top: 40px;
+  cursor: pointer;
 }
 
-  .inner {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(
-      100px circle at var(--mouseX) var(--mouseY),
-      hsl(var(--primary) / 0.3),
-      transparent 50%
-    );
-    border-radius: inherit;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.25s ease;
-  }
+.botao h1{
+  font-size: 30px;
+}
 
-  .botao:hover .inner {
-    opacity: 1;
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.botao::after, .botao::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+
+.botao::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
   }
+  to{
+    --angle: 360deg;
+  }
+}
+
+.inner {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background: radial-gradient(100px circle at var(--mouseX, 50%) var(--mouseY, 50%),rgba(71, 93, 218, 0.3),transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.botao:hover .inner {
+  opacity: 1;
+}
 
 
   /* pagina 2 _________________________________________________________________ */
@@ -509,7 +525,6 @@ header {
 footer{
   display: flex;
   position: relative;
-  justify-items: center;
   background-color: black;
   top: 5%;
   width: 100%;
@@ -526,7 +541,7 @@ footer{
 
 .links{
   position: absolute;
-  left: 48%;
+  left: 43%;
   top: 30%;
 }
 
@@ -540,8 +555,9 @@ footer{
 
 .links p{
   color: white;
-  margin-left: -10px;
+  margin-left: -50px;
   margin-top: 90px;
+  font-size: 20px;
 }
 
 .bxl-github{
@@ -601,7 +617,7 @@ footer{
 .footer-list a {
   position: relative;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   transition: color 0.3s ease;
 }
 
@@ -622,9 +638,3 @@ footer{
 .footer-list a.active::after {
   transform: scaleX(1);
 }
-
-
-
-
-
-

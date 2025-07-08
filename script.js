@@ -1,4 +1,5 @@
-const botao   = document.querySelector('.botao');
+// efeito hover no card
+const botao = document.querySelector('.botao');
 const inner = botao.querySelector('.inner');
 
 botao.addEventListener('mousemove', e => {
