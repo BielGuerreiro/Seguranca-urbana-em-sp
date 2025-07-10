@@ -19,18 +19,6 @@ html{
 body{
     background-color: #00021b;
     height: 420vh;
-   
-}
-
-.logo{
-    position: absolute;
-    top: 5%;
-    left: -10%;
-}
-
-.logo img{
-    height: 130px;
-    width: auto;
 }
 
 header {
@@ -46,16 +34,50 @@ header {
   z-index: 10;
 }
 
+.efeito1 {
+  opacity: 0;
+  transform: translateX(-100px); 
+  transition: all 0.8s ease-out;
+}
+
+.efeito2 {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s ease-out;
+}
+
+.efeito3 {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.8s ease-out;
+}
+
+.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.logo{
+  position: absolute;
+  top: 5%;
+  left: -10%;
+}
+
+.logo img{
+  height: 130px;
+  width: auto;
+}
+
 .menu {
   padding: 15px;
   margin-top: 350px;
 }
 
 .menu li {
-    margin-bottom: 53px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-bottom: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu a {
@@ -144,12 +166,13 @@ header {
 }
 
 .conteudo  h1{
-  color: var(--main-color);
+  color: var(--secun-color);
   font-size: 50px;
 }
 
 .conteudo p{
   color: var(--main-color);
+  font-size: 20px;
   align-self: center;
   margin-left: 120px;
   margin-top: 20px;
@@ -162,7 +185,7 @@ header {
   background: #1c1f2b;
   border-radius: 10px;
   position: relative;
-  margin-left: -420px;
+  left: 10%;
   margin-top: 40px;
   cursor: pointer;
 }
@@ -182,14 +205,20 @@ header {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
   top: 50%;
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  padding: 3px;
+  padding: 2px;
   border-radius: 10px;
   animation: 3s spin linear infinite;
+   background: conic-gradient(
+    from var(--angle),
+    #475dda 0deg,
+    #475dda 90deg,
+    transparent 90deg,
+    transparent 360deg
+  );
 }
 
 .botao::before{
@@ -225,6 +254,7 @@ header {
 
   .segunda{
     margin-top: 100px;
+    display: flex;
   }
 
   #descricao {
@@ -234,26 +264,49 @@ header {
   .sobre h1{
     color: var(--secun-color);
     font-size: 50px;
-    margin-left: 200px;
+    position: relative;
+    left: 25%;
   }
 
   .sobre h2{
-    position: relative;
     margin-top: 50px;
+    margin-left: 260px;
     font-size: 26px;
     color: white;
-    max-width: 800px;
-    left: 10%;
+    max-width: 700px;
   }
 
   .cel{
-    width: 550px;
+    width: 39%;
     position: relative;
-    left: 53%;
-    margin-top: -700px;
-    margin-left: 200px;
-    pointer-events: none; 
+    display: flex;
+    left: 130%;
+    margin-top: -750px;
+    pointer-events: none;
   }
+
+  #gps{
+    display: flex;
+    position: relative;
+    left: 132%;
+    margin-top: -742px;
+    width: 35%;
+    height: 730px;
+    border-radius: 50px;
+  }
+
+  .apagado {
+  opacity: 0;
+  filter: brightness(0) saturate(0) blur(10px);
+  transform: none;
+  transition: filter 2s ease, opacity 2s ease;
+}
+
+.ligado {
+  opacity: 1;
+  filter: brightness(1) saturate(1) blur(0);
+}
+
 
   /* pagina 3 _______________________________________________________________________________ */
 
@@ -261,7 +314,7 @@ header {
     width: 100%;
     height: 25%;
     background-color: black;
-    margin-top: 85px;
+    margin-top: 110px;
   }
 
   .app {
