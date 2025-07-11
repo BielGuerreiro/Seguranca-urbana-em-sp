@@ -180,7 +180,7 @@ header {
 
 .botao{
   padding: 2em;
-  width: 300px;
+  width: 17%;
   max-width: 100%;
   background: #1c1f2b;
   border-radius: 10px;
@@ -278,6 +278,7 @@ header {
 
   .cel{
     width: 39%;
+    height: auto;
     position: relative;
     display: flex;
     left: 130%;
@@ -300,19 +301,19 @@ header {
   filter: brightness(0) saturate(0) blur(10px);
   transform: none;
   transition: filter 2s ease, opacity 2s ease;
-}
+  }
 
-.ligado {
-  opacity: 1;
-  filter: brightness(1) saturate(1) blur(0);
-}
+  .ligado {
+    opacity: 1;
+    filter: brightness(1) saturate(1) blur(0);
+  }
 
 
   /* pagina 3 _______________________________________________________________________________ */
 
   .terceira{
     width: 100%;
-    height: 25%;
+    height: 103vh;
     background-color: black;
     margin-top: 110px;
   }
@@ -690,4 +691,13 @@ footer{
 .footer-list a:hover::after,
 .footer-list a.active::after {
   transform: scaleX(1);
+}
+
+/* responsivo */
+
+@media (max-width: 600px) { 
+
+header {
+  display: none;
+}
 }
