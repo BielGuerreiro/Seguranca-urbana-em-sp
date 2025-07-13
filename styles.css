@@ -18,7 +18,7 @@ html{
 
 body{
     background-color: #00021b;
-    height: 420vh;
+    height: 430vh;
 }
 
 header {
@@ -167,7 +167,7 @@ header {
 
 .conteudo  h1{
   color: var(--secun-color);
-  font-size: 50px;
+  font-size: 3rem;
 }
 
 .conteudo p{
@@ -263,7 +263,7 @@ header {
 
   .sobre h1{
     color: var(--secun-color);
-    font-size: 50px;
+    font-size: 3rem;
     position: relative;
     left: 25%;
   }
@@ -271,7 +271,7 @@ header {
   .sobre h2{
     margin-top: 50px;
     margin-left: 260px;
-    font-size: 26px;
+    font-size: 1.7rem;
     color: white;
     max-width: 700px;
   }
@@ -294,11 +294,12 @@ header {
     width: 35%;
     height: 730px;
     border-radius: 50px;
+    pointer-events: none;
   }
 
   .apagado {
   opacity: 0;
-  filter: brightness(0) saturate(0) blur(10px);
+  filter: brightness(0) saturate(0) blur(4px);
   transform: none;
   transition: filter 2s ease, opacity 2s ease;
   }
@@ -700,4 +701,151 @@ footer{
 header {
   display: none;
 }
+
+body{
+    background-color: #00021b;
+    height: 400vh;
+}
+
+.conteudo {
+  top: 30%;
+  left: 0%;
+}
+
+.conteudo  h1{
+  font-size: 30px;  
+  white-space: nowrap;
+}
+
+.conteudo p{
+  font-size: 17px;
+  margin-left: 30px;
+}
+
+.botao{
+  width: 70%;
+  left: 5%;
+}
+
+/* segunda ________________________ */
+.segunda{
+    margin-top: 10px;
+  }
+
+  .sobre h1{
+    font-size: 3rem;
+    left: 15%;
+  }
+
+  .sobre h2{
+    margin-left: 50px;
+    font-size: 1.3rem;
+    max-width: 400px;
+  }
+
+  .cel{
+    width: 70%;
+    left: 15%;
+    margin-top: 50px;
+  }
+
+  #gps{
+    left: 18%;
+    margin-top: -652px;
+    width: 64%;
+    height: 86vh;
+    border-radius: 50px;
+  }
+
+  /* teceira  _______________________________________________ */
+  
+  .app {
+  padding-top: 100px;
+  }
+
+  .app h1{
+    font-size: 38px;
+  }
+
+  .botao-wrapper::before {
+    top: 80px;
+    left: 53%;
+    font-size: 20px;
+    opacity: 1;
+  }
+
+  .btn {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+
+  /* QUARTA ____________________________________________________ */
+
+  .principal {
+  gap: 0px;
+  max-width: 400px;
+  }
+
+  .principal input{
+    margin-top: 20px;
+    width: 350px;
+    height: 50px;
+  }
+
+  .secundario input{
+    left: 12%;
+    width: 350px;
+    height: 50px;
+    max-width: 400px;
+}
+
+  .secundario textarea{
+    width: 380px;
+    height: 200px;
+  }
+
+  .botao-enviar{
+    width: 400px;
+    height: 70px;
+    background-color: var(--secun-color);
+    color: white;
+    box-shadow: 0 0 10px var(--secun-color),
+                0 0 20px var(--secun-color);
+}
+
+/* rodape ______________________________________________________________________ */
+
+footer{
+  top: 5%;
+  height: 15%;
+}
+
+.footer-container img{
+    width: 35%;
+    left: 0%;
+    top: 10%;
+}
+
+.links{
+  position: absolute;
+  left: 25%;
+  top: 60%;
+}
+
+.links i{
+  font-size: 32px;
+}
+
+.links p{
+  margin-top: 50px;
+}
+
+.footer-list {
+  right: 5%;
+  top: 10%;
+}
+
+.footer-list a {
+  font-size: 15px;
+}
+
 }
