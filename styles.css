@@ -721,7 +721,7 @@ html, body {
 .conteudo h2{
   font-size: 28px;  
   white-space: nowrap;
-  margin-left: -27px;
+  margin-left: -20px;
 }
 
 .conteudo p{
@@ -734,13 +734,17 @@ html, body {
   left: 5%;
 }
 
+.botao h1{
+  font-size: 23px;
+}
+
 /* segunda ________________________ */
  .segunda{
     margin-top: 40px;
   }
 
   .sobre h1{
-    left: 15%;
+    left: 5%;
   }
 
   .sobre h2{
@@ -752,14 +756,14 @@ html, body {
 
   .cel {
     width: clamp(200px, 39%, 200px);
-    top: 730px;
+    top: 720px;
     left: 25%;
   }
 
   #gps {
     width: clamp(180px, 35%, 200px);
     height: 390px;
-    top: 737px;
+    top: 729px;
     left: 27.8%;
     border-radius: 25px;
   }
@@ -768,7 +772,7 @@ html, body {
   
   .terceira{
     height: 100vh;
-    margin-top: 550px;
+    margin-top: 540px;
   }
 
   .app {
@@ -792,6 +796,10 @@ html, body {
 
   /* QUARTA ____________________________________________________ */
 
+    #contato h1{
+    font-size: 30px;
+  }
+
   .principal {
   gap: 0px;
   max-width: 400px;
@@ -804,8 +812,8 @@ html, body {
   }
 
   .secundario input{
-    left: 5%;
-    width: 350px;
+    left: 5.3%;
+    width: 345px;
     height: 50px;
     max-width: 400px;
 }
@@ -818,6 +826,7 @@ html, body {
   .botao-enviar{
     width: 350px;
     height: 70px;
+    margin-top: 20px;
     background-color: var(--secun-color);
     color: white;
     box-shadow: 0 0 10px var(--secun-color),
