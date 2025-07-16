@@ -713,6 +713,14 @@ html, body {
   overflow-x: clip;
 }
 
+.container {
+  height: 80vh;
+}
+
+.container::before {
+  filter: blur(1px);
+}
+
 .conteudo {
   top: 30%;
   left: 0%;
@@ -721,7 +729,7 @@ html, body {
 .conteudo h2{
   font-size: 28px;  
   white-space: nowrap;
-  margin-left: -20px;
+  margin-left: -10px;
 }
 
 .conteudo p{
@@ -735,7 +743,7 @@ html, body {
 }
 
 .botao h1{
-  font-size: 23px;
+  font-size: 25px;
 }
 
 /* segunda ________________________ */
@@ -764,7 +772,7 @@ html, body {
     width: clamp(180px, 35%, 200px);
     height: 390px;
     top: 729px;
-    left: 27.8%;
+    left: 27.7%;
     border-radius: 25px;
   }
 

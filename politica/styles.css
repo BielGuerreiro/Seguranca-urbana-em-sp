@@ -1,0 +1,200 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+  --main-color: #ffffff;
+  --secun-color: #475dda;
+}
+
+html ,body{
+  scroll-behavior: smooth;
+  background-color: #00021b;
+}
+
+.conteudo{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+}
+
+.historico{
+    position: absolute;
+    top: 10%;
+    left: 2%;
+}
+
+.historico h2{
+    color: var(--secun-color);
+    font-size: 23px;
+}
+
+.historico a{
+    color: var(--secun-color);
+    font-size: 23px;
+} 
+
+.historico a:hover{
+  color: white;
+}
+
+.politica{
+    position: relative;
+    top: 250px;
+    left: 10%;
+    max-width: 1200px;
+}
+
+.politica h1{
+    color: var(--main-color);
+    font-size: 40px;
+}
+
+.texto h2{
+    color: var(--secun-color);
+    margin-top: 50px;
+    font-size: 32px;
+}
+
+.texto p{
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 30px;
+}
+
+.texto li{
+    color: #b0aaff;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+
+/* rodapé ___________________________________________________________ */
+
+footer {
+  background-color: black;
+  width: 100%;
+  padding: 90px 20px;
+  box-sizing: border-box;
+  margin-top: 300px;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.footer-container img {
+  width: 200px;
+  height: auto;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links .icones {
+  display: flex;
+  gap: 15px;
+}
+
+.links i {
+  font-size: 35px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.links p {
+  color: white;
+  margin-top: 50px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.bxl-github{
+  color: #333333;;
+  text-shadow: 0 0 15px #333333;;
+  box-shadow: 0 30px 45px -17px white;
+}
+
+.bxl-github:hover{
+  transform: scale(1.2);
+  box-shadow: 0 30px 45px -15px white;
+}
+
+.bxl-linkedin-square{
+  color: #0A66C2;
+  text-shadow: 0 0 30px #0A66C2;
+  box-shadow: 0 30px 45px -17px #0A66C2;
+}
+
+.bxl-linkedin-square:hover{
+  transform: scale(1.2);
+  box-shadow: 0 30px 45px -15px #0A66C2;
+}
+
+.bxl-gmail{
+  color: #EA4335;
+  text-shadow: 0 0 30px #EA4335;
+  box-shadow: 0 30px 45px -17px #EA4335;
+}
+
+.bxl-gmail:hover{
+  transform: scale(1.2);
+  box-shadow: 0 30px 45px -15px #EA4335;
+}
+
+.bxl-instagram{
+  color: #E1306C;
+  text-shadow: 0 0 30px #E1306C;
+  box-shadow: 0 30px 45px -17px #E1306C;
+}
+
+.bxl-instagram:hover{
+  transform: scale(1.2);
+  box-shadow: 0 30px 45px -15px #E1306C;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-list a {
+  color: white;
+  font-size: 18px;
+  position: relative;
+}
+
+.footer-list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.footer-list a:hover::after {
+  transform: scaleX(1);
+}
