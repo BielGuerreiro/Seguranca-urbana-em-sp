@@ -25,7 +25,7 @@ html ,body{
 
 .historico{
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 2%;
 }
 
@@ -43,40 +43,34 @@ html ,body{
   color: white;
 }
 
-.politica{
+.termos{
     position: relative;
-    top: 250px;
+    top: 200px;
     left: 10%;
     max-width: 1200px;
 }
 
-.politica h1{
+h1{
     color: var(--main-color);
     font-size: 40px;
 }
 
-.texto h2{
+h2{
     color: var(--secun-color);
     margin-top: 50px;
     font-size: 32px;
 }
 
-.texto p{
+p{
     color: var(--main-color);
     font-size: 23px;
     margin-top: 30px;
 }
 
-.texto li{
+li{
     color: #b0aaff;
     font-size: 20px;
     margin-top: 25px;
-}
-
-.texto a{
-   color: #ffe300;
-  font-weight: bold;
-  text-shadow: 0 0 5px #ffe300;
 }
 
 strong {
@@ -85,6 +79,7 @@ strong {
   text-shadow: 0 0 5px #ffe300;
 }
 
+
 /* rodapé ___________________________________________________________ */
 
 footer {
@@ -92,8 +87,8 @@ footer {
   width: 100%;
   padding: 90px 20px;
   box-sizing: border-box;
-  margin-top: 300px;
   position: relative;
+  margin-top: 300px;
 }
 
 .footer-container {
@@ -184,7 +179,7 @@ footer {
 .footer-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
 }
 
 .footer-list a {
@@ -210,29 +205,31 @@ footer {
   transform: scaleX(1);
 }
 
-/* responsivo ________________________________________________________________ */
+/* responsivo _________________________________________________________ */
 @media (max-width: 600px) {
 
-
-
-.conteudo{
-  height: 300vh;
+.historico{
+    top: 2%;
 }
 
-.politica{
+.conteudo{
+  height: 350vh;
+}
+
+.termos{
   max-width: 350px;
   top: 150px;
 }
 
-.politica h1{
+h1{
     font-size: 35px;
 }
 
-.texto h2{
+h2{
     font-size: 30px;
 }
 
-.texto p{
+p{
     font-size: 22px;
 }
 
@@ -258,7 +255,7 @@ footer {
 }
 
 .links p {
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 15px;
 }
 
