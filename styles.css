@@ -253,13 +253,13 @@ header {
   /* pagina 2 _________________________________________________________________ */
 
   .segunda{
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     position: relative;
   }
 
   #descricao {
-  scroll-margin-top: 100px
+  scroll-margin-top: 50px
   }
 
   .sobre h1{
@@ -270,15 +270,15 @@ header {
   }
 
   .sobre h2{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 260px;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color: white;
     max-width: 700px;
   }
 
   .cel {
-    width: clamp(280px, 39%, 350px);
+    width: clamp(280px, 39%, 420px);
     height: auto;
     position: absolute;
     top: 12px;
@@ -288,11 +288,11 @@ header {
   }
 
   #gps {
-    width: clamp(260px, 35%, 320px);
-    height: 680px;
+    width: clamp(260px, 35%, 380px);
+    height: 820px;
     position: absolute;
     top: 26px;
-    left: 60.8%;
+    left: 61%;
     border-radius: 50px;
     display: flex;
     pointer-events: none;
@@ -767,14 +767,14 @@ html, body {
 
   .cel {
     width: clamp(200px, 39%, 200px);
-    top: 720px;
+    top: 850px;
     left: 25%;
   }
 
   #gps {
     width: clamp(180px, 35%, 200px);
     height: 390px;
-    top: 729px;
+    top: 859px;
     left: 27.7%;
     border-radius: 25px;
   }
