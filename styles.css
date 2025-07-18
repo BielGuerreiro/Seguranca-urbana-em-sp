@@ -545,6 +545,7 @@ header {
     width: 34.5%;
     border-radius: 10px;
     font-size: 20px;
+    padding: 12px 16px; 
   }
 
   .secundario textarea:hover{
@@ -554,10 +555,6 @@ header {
   input::placeholder, textarea::placeholder {
     color: var(--secun-color);        
     padding-left: 10px;
-}
-
-  textarea::placeholder{
-    padding-top: 15px;
 }
 
   input, textarea {

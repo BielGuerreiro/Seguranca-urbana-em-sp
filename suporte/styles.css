@@ -213,11 +213,11 @@ footer {
 @media (max-width: 600px) {
 
 .historico{
-    top: 2%;
+  top: 2%;
 }
 
 .conteudo{
-  height: 200vh;
+  height: 190vh;
 }
 
 .suporte{
@@ -226,7 +226,8 @@ footer {
 }
 
 h1{
-    font-size: 35px;
+    font-size: 33px;
+    white-space: nowrap;
 }
 
 h2{
@@ -241,7 +242,7 @@ p{
 
 footer {
   padding: 10px 10px;
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 .footer-container img {

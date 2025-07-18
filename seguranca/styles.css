@@ -19,7 +19,7 @@ html ,body{
 
 .conteudo{
     width: 100%;
-    height: 150vh;
+    height: 120vh;
     display: flex;
 }
 
@@ -43,14 +43,14 @@ html ,body{
   color: white;
 }
 
-.termos{
+.texto{
     position: relative;
     top: 200px;
     left: 10%;
     max-width: 1200px;
 }
 
-.termos a{
+.texto a{
     color: #ffe300;
     font-weight: bold;
     text-shadow: 0 0 5px #ffe300;
@@ -67,14 +67,8 @@ h2{
     font-size: 32px;
 }
 
-p{
-    color: var(--main-color);
-    font-size: 23px;
-    margin-top: 30px;
-}
-
 li{
-    color: #b0aaff;
+    color: var(--main-color);
     font-size: 20px;
     margin-top: 25px;
 }
@@ -94,7 +88,6 @@ footer {
   padding: 90px 20px;
   box-sizing: border-box;
   position: relative;
-  margin-top: 300px;
 }
 
 .footer-container {
@@ -185,7 +178,6 @@ footer {
 .footer-list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
 
 .footer-list a {
@@ -215,20 +207,20 @@ footer {
 @media (max-width: 600px) {
 
 .historico{
-    top: 2%;
+  top: 2%;
 }
 
 .conteudo{
-  height: 300vh;
+  height: 165vh;
 }
 
-.termos{
+.texto{
   max-width: 350px;
   top: 150px;
 }
 
 h1{
-    font-size: 35px;
+    font-size: 33px;
 }
 
 h2{
