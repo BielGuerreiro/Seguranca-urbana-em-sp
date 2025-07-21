@@ -51,12 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// retorna ao topo com o f5
+// retorna ao topo com o f5 ______________________________________
 window.addEventListener("load", function () {
-  // Detecta se a página foi recarregada
   if (performance.navigation.type === 1) {
-    // Redireciona para a homepage
-    window.location.href = "/"; // Altere "/" pela rota da sua homepage
+    window.location.href = "/"; 
   }
 });
 
